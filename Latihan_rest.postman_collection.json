@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "c71461c4-c8ba-49b2-8613-a581bfb0d7ae",
+		"name": "Latihan_rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32054343"
+	},
+	"item": [
+		{
+			"name": "lihat isi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/CI_sertifikasi/Latihrest/list_book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CI_sertifikasi",
+						"Latihrest",
+						"list_book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tambah buku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "K399",
+							"type": "text"
+						},
+						{
+							"key": "kategori",
+							"value": "Sci-fi",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Black hole",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "5000",
+							"type": "text"
+						},
+						{
+							"key": "stok",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "penerbit",
+							"value": "Danendra",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/CI_sertifikasi/Latihrest/add_book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CI_sertifikasi",
+						"Latihrest",
+						"add_book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus buku",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idBuku",
+							"value": "K399",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/CI_sertifikasi/Latihrest/del_book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CI_sertifikasi",
+						"Latihrest",
+						"del_book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update buku",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idBuku",
+							"value": "K399",
+							"type": "text"
+						},
+						{
+							"key": "kategori",
+							"value": "Horror",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Black Hole",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "50000",
+							"type": "text"
+						},
+						{
+							"key": "stok",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "penerbit",
+							"value": "Danendra",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/CI_sertifikasi/Latihrest/up_book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CI_sertifikasi",
+						"Latihrest",
+						"up_book"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
